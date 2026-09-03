@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madabathula Poojitha · Portfolio</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=32" />
+</head>
+<body>
+  <!-- fades out on load so arriving from the ball's white flash is seamless -->
+  <div class="page-in" aria-hidden="true"></div>
+
+  <!-- ============ THE PAGE ============ -->
+  <main id="info" class="view is-active">
+
+    <!-- ambient sky: drifting clouds pinned to the top of the view -->
+    <div class="scene" aria-hidden="true">
+      <span class="cloud c1"></span>
+      <span class="cloud c2"></span>
+      <span class="cloud c3"></span>
+      <span class="cloud c4"></span>
+    </div>
+
+    <div class="site">
+
+      <div class="site-top">
+        <a href="index.html" class="pdx-back" aria-label="Back to grass">
+          <span class="pdx-back-arrow">←</span> Back to Grass
+        </a>
+      </div>
+
+      <!-- left: profile sidebar -->
+      <aside class="side">
+        <div class="side-tag"><span class="mini-ball"></span>Pokémon Details</div>
+        <div class="side-hero">
+          <!-- standing trainer: save your PNG as avatar.png in the project folder -->
+          <div class="side-shadow" aria-hidden="true"></div>
+          <img class="side-avatar" src="avatar.png" alt="Madabathula Poojitha"
+               onload="var p=document.getElementById('tcgPhoto'); if(p){p.style.display='none';}"
+               onerror="this.remove();" />
+          <div class="pdx-photo" id="tcgPhoto"><span>★</span></div>
+          <div class="side-stats" aria-hidden="true">
+            <span class="side-stat ht"><i>HT</i>4'10"</span>
+            <span class="side-stat wt"><i>WT</i>39 kg</span>
+          </div>
+        </div>
+        <h1 class="side-name">Madabathula Poojitha</h1>
+        <p class="side-role">Computer Science Student | AI Full-Stack Developer</p>
+        <p class="side-tagline">Accessibility Enthusiast.</p>
+
+        <div class="side-facts">
+          <span><i>📍</i>Visakhapatnam, Andhra Pradesh, India</span>
+        </div>
+
+        <div class="side-block">
+          <span class="side-label">Skills</span>
+          <div class="pdx-chips side-chips">
+            <span class="pdx-chip">JavaScript</span>
+            <span class="pdx-chip">React.js</span>
+            <span class="pdx-chip">Node.js &amp; Express.js</span>
+            <span class="pdx-chip">PostgreSQL / SQL</span>
+            <span class="pdx-chip">HTML &amp; CSS</span>
+            <span class="pdx-chip">AI &amp; Accessibility</span>
+          </div>
+        </div>
+
+        <div class="side-block">
+          <span class="side-label">Links</span>
+          <div class="side-links">
+            <a href="https://github.com/PoojaRam166" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+            <a href="https://www.linkedin.com/in/poojitha-madabathula-3bb6b6331/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+            <a href="mailto:poojithamadabathula@gmail.com">Email <span>↗</span></a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- right: content (stacked sections) -->
+      <section class="main">
+
+        <!-- About -->
+        <section class="sec">
+          <h2 class="sec-title">About</h2>
+          <p class="pdx-lead">
+            I'm a Computer Science student who loves building useful technology that solves real problems. I enjoy working on full-stack web apps, AI tools, and accessibility-focused products with clean, easy-to-use designs.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            I like turning ideas into real, working products. I mainly work with React, JavaScript, Node.js, Express, PostgreSQL, and AI.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            Want to talk? You can reach me by emailing
+            <a href="mailto:poojithamadabathula@gmail.com">poojithamadabathula@gmail.com</a>.
+          </p>
+        </section>
+
+        <!-- Experience (company list ← → details) -->
+        <section class="sec">
+          <h2 class="sec-title">Experience</h2>
+          <div class="xp" id="xp">
+            <div class="xp-tabs" role="tablist">
+              <button class="xp-co is-active" data-co="0">Computer Science Education</button>
+            </div>
+            <div class="xp-details">
+              <div class="xp-detail is-active" data-co="0">
+                <h4>Computer Science Student <span>@ India</span></h4>
+                <p class="xp-date">Present</p>
+                <ul>
+                  <li>Building full-stack web apps using modern frontend and backend tools.</li>
+                  <li>Working with React, Vite, Node.js, Express.js, and PostgreSQL.</li>
+                  <li>Learning database design, REST APIs, authentication, and deployment.</li>
+                  <li>Making projects that solve real, everyday problems using technology.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="sec">
+          <h2 class="sec-title">Side Quests</h2>
+          <div class="pdx-projects">
+            <a class="pdx-proj" href="https://github.com/PoojaRam166" target="_blank" rel="noopener">
+              <div>
+                <h4>DukaanMitra</h4>
+                <p><strong>Inventory &amp; Billing Management Platform</strong></p>
+                <p>A simple, easy-to-use platform that helps small shopkeepers manage products, stock, billing, customers, expenses, and sales efficiently. Built with modern web technologies to ensure a seamless experience.</p>
+                <ul style="margin: 10px 0 0 16px; font-size: 13.5px; color: #6c7791; line-height: 1.55;">
+                  <li>Real-time inventory tracking and low-stock alerts.</li>
+                  <li>Quick and simple billing and invoice generation.</li>
+                  <li>Customer management and sales analytics dashboard.</li>
+                </ul>
+                <p style="margin-top: 12px; font-size: 12.5px; color: #6c7791; font-weight: 600;">Tech used: React, Vite, JavaScript, Node.js, Express.js, PostgreSQL</p>
+              </div>
+              <span class="pdx-proj-arrow">↗</span>
+            </a>
+          </div>
+        </section>
+
+      </section>
+    </div>
+
+    <!-- playful footer: drop a Pokémon into the crowd -->
+    <footer class="pfoot">
+      <div class="pfoot-cta">
+        <p class="pfoot-title">Gotta catch 'em all</p>
+        <p class="pfoot-sub">Every visitor leaves a Pokémon behind. Add yours to the crowd.</p>
+        <button id="pfootBtn" class="pfoot-btn">＋ Drop a Pokémon</button>
+        <span id="pfootCount" class="pfoot-count">…</span>
+      </div>
+      <div class="pfoot-stage" id="pfootStage"></div>
+      <div class="pfoot-ground" aria-hidden="true"></div>
+    </footer>
+
+    <!-- legal / fan-work disclaimer -->
+    <footer class="legal">
+      <p>Pokémon © Nintendo, Game&nbsp;Freak &amp; The&nbsp;Pokémon&nbsp;Company. An unofficial fan project.</p>
+      <p>© 2026 Madabathula Poojitha. Writing, art &amp; code are mine, made with love. No personal data collected.</p>
+      <p class="legal-sign">PoojaRam166 💛</p>
+    </footer>
+  </main>
+
+  <script src="script.js?v=32"></script>
+</body>
+</html>
